@@ -5,16 +5,13 @@
     <style>
       
 
-        a:hover {
-        color : pink;
-        }
-        body{
-          background-image: url("https://i.pinimg.com/736x/9d/61/ca/9d61cab794a8cc1c8dcac2fd0ada2f07.jpg");
-          
-        }
+        
+        
         </style>
     <!-- This part is for the browser, not what people see on the page -->
     <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -22,13 +19,18 @@
 
     <button id="go">click me</button>
     <p id="msg"></p>
-   
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="basics.html">Basics</a>
-      <a href="learning.html">Learning</a>
-      <a href="improving.html">Improving</a>
+  
+    <nav class="top">
+      <a class="logo" href="index.html">Looksmax</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="basics.html">Basics</a>
+        <a href="learning.html">Learning</a>
+        <a href="improving.html">Improving</a>
+      </div>
     </nav>
+
+    <main>
     <a class="org" href="https://looksmax.org">THE ORG</a>
     <!-- Everything inside body is what visitors see -->
     <h1 id="title">Hello, looksmaxxers</h1>
@@ -43,11 +45,13 @@
 
     <nav>
       <a href="contact.html">contact</a>
+    
     </nav>
-
+  </main>
     <footer>
       <p>looksmaxxing notes- built by kabir</p>
     </footer>
+  
     <script src="script.js"></script>
 
   </body>
