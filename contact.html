@@ -4,7 +4,7 @@
     <title>contact list</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -21,10 +21,12 @@
       </nav>
       <main>
         <h1>Contact</h1>
-    <form>
-        <p><input type="text" placeholder="name"></p>
-        <p><input type="email" placeholder="email"></p>
-        <p><textarea placeholder="Message"></textarea></p>
+    <form id="contact-form">
+      <p id="thanks"></p>
+      <p><input id="contact-name" type="text" placeholder="name"></p>
+      <p><input id="contact-email" type="email" placeholder="email"></p>
+      <p><textarea id="contact-message" placeholder="Message"></textarea></p>
+      
         <p><button type="submit">Send</button></p>
         </form>
 
@@ -35,7 +37,7 @@
     <footer> 
         <p>copyright 2026 looksmax.org</p>
     </footer>
-
+     <script src="contact.js"></script>
 
     </body>
 </html>
