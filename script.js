@@ -83,4 +83,19 @@ if (index !== -1) {
 
  };
 };
-// This } closes the add-button function. The ; ends the whole "when clicked, do this" line.
+function loadQuote() {
+  document.getElementById("today").textContent = "loading..";
+ fetch("https://dummyjson.com/quotes/random")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    document.getElementById("today").textContent = data.quote + " - " + data.author;
+  })
+  .catch(function () {
+    document.getElementById("today").textContent = "could not load a qoute.";
+})};
+loadQuote();
+document.getElementById("new-quote").onclick = function () {
+  loadQuote ();
+}
